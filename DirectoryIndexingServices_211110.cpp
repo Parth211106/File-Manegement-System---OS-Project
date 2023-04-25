@@ -72,7 +72,7 @@ public:
     }
 
     void Index() {
-        cout << "File Index:" << endl;
+        cout << "File in Directory are :" << endl;
         Inorder(root);
     }
 
@@ -93,11 +93,11 @@ public:
         }
     }
 };
-class Manager {
+class cManager {
 public:
     Indexer indexer;
 
-    Manager() {}
+    cManager() {}
 
     void vAddfile(string filename) {
         indexer.vAddfile(filename);
@@ -115,17 +115,20 @@ public:
         indexer.Index();
     }
 };
+
+/*
 int main() {
-    Manager Manager;
+    cManager managerObj;
     // Index all files in directory
-    Manager.Indexing("C:\\Users\\thaku\\Downloads");
+    managerObj.Indexing("C:\\Users\\ipart\\OneDrive\\Desktop\\");
     // Search for a file
-    if (Manager.Searchfile("abc.txt")) {
+    if (managerObj.Searchfile("test.txt")) {
         cout << "File found!" << endl;
     } else {
         cout << "File not found." << endl;
     }
     // Print the file index
-    Manager.Index();
+    managerObj.Index();
     return 0;
 }
+*/
